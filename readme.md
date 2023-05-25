@@ -1,4 +1,4 @@
-# 11tyAI
+# 11tyAI (v0.1)
 > Created by Dan Levin 
 
 A simple starter project for Eleventy with Webpack static site generator [Eleventy/11ty](https://www.11ty.dev/), just
