@@ -1,0 +1,108 @@
+$text_sizes: (
+    'xs': 0.75rem,
+    'sm': 0.875rem,
+    'base': 1rem,
+    'lg': 1.125rem,
+    'xl': 1.25rem,
+    '2xl': 1.5rem,
+    '3xl': 1.875rem,
+    '4xl': 2.25rem,
+    '5xl': 3rem,
+    '6xl': 3.75rem,
+    '7xl': 4.5rem,
+    '8xl': 6rem,
+    '9xl': 8rem,
+);
+
+// make helper classes for each text size add !important to override other classes
+@each $key, $value in $text_sizes {
+    .text-#{$key} {
+        font-size: $value !important;
+    }
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+
+h1 {
+    font-size: map-get($map: $text_sizes, $key: '5xl');
+    @include breakpoint(md) {
+        font-size: map-get($map: $text_sizes, $key: '6xl');
+    }
+    @include breakpoint(lg) {
+        font-size: map-get($map: $text_sizes, $key: '7xl');
+    }
+}
+
+h2 {
+    font-size: map-get($map: $text_sizes, $key: '4xl');
+    @include breakpoint(md) {
+        font-size: map-get($map: $text_sizes, $key: '5xl');
+    }
+    @include breakpoint(lg) {
+        font-size: map-get($map: $text_sizes, $key: '6xl');
+    }
+}
+
+h3 {
+    font-size: map-get($map: $text_sizes, $key: '3xl');
+    @include breakpoint(md) {
+        font-size: map-get($map: $text_sizes, $key: '4xl');
+    }
+    @include breakpoint(lg) {
+        font-size: map-get($map: $text_sizes, $key: '5xl');
+    }
+}
+
+h4 {
+    font-size: map-get($map: $text_sizes, $key: '2xl');
+    @include breakpoint(md) {
+        font-size: map-get($map: $text_sizes, $key: '3xl');
+    }
+    @include breakpoint(lg) {
+        font-size: map-get($map: $text_sizes, $key: '4xl');
+    }
+}
+
+h5 {
+    font-size: map-get($map: $text_sizes, $key: 'xl');
+    @include breakpoint(md) {
+        font-size: map-get($map: $text_sizes, $key: '2xl');
+    }
+    @include breakpoint(lg) {
+        font-size: map-get($map: $text_sizes, $key: '3xl');
+    }
+}
+
+
+p{
+    font-size: map-get($map: $text_sizes, $key: 'base');
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}

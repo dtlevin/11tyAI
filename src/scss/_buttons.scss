@@ -1,0 +1,40 @@
+// make utility claseses for button with hover, active, focus, disabled
+@each $name, $color in $colors {
+   .btn-#{$name} {
+     background-color: $color;
+     text-decoration: none;
+     color: white;
+     padding: 5px 10px;
+     border-radius: 3px;
+     font-family: $font-family-sans-serif;
+     font-weight: 400;
+     font-size: 1rem;
+     @include transition-all;
+     &:hover {
+       color: white;
+       background-color: darken($color, 8%);
+       transition: all 0.3s ease;
+     }
+     &:active {
+       color: white;
+       background-color: darken($color, 25%);
+     }
+     &:focus {
+       color: white;
+       background-color: darken($color, 8%);
+     }
+     &:disabled {
+       color: white;
+       background-color: darken($color, 25%);
+     }
+   }
+}
+
+
+.nav-arrow {
+   fill: map-get($colors, "orange");
+   transition: all .5s ease-in-out;
+   &:hover {
+      fill: white;
+   }
+}

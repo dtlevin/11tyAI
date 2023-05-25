@@ -1,0 +1,114 @@
+// typeface 
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: 'Garmond', 'Times New Roman', Times, serif;
+
+
+//  apply smooth scroll to html
+html {
+    scroll-behavior: smooth;
+}
+
+// Creat tansision mixin of all 1s ease 
+@mixin transition-all {
+    transition: all .5s ease;
+}
+
+// colors
+$colors: ( 
+  'red': #ff0000,
+  'orange': #ff6600,
+  'yellow': #ffff00,
+  'green': #00ff00,
+  'blue': #0000ff,
+  'indigo': #4b0082,
+  'violet': #8a2be2,
+  'black': #000000,
+  'white': #ffffff,
+  'gray': #808080,
+);
+
+
+// make color utility classes text-colorName background bg-colorName
+@each $name, $color in $colors {
+    .text-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+    .border-#{$name} {
+      border-color: $color;
+    }
+}
+
+// make color utility classes text-colorName-hover background bg-colorName-hover
+@each $name, $color in $colors {
+    .text-#{$name}-hover:hover {
+      color: $color;
+      @include transition-all;
+    }
+    .bg-#{$name}-hover:hover {
+      background-color: $color;
+      @include transition-all;
+    }
+    .border-#{$name}-hover:hover {
+      border-color: $color;
+      @include transition-all;
+    }
+}
+
+// make color utility classes text-colorName-active background bg-colorName-active
+@each $name, $color in $colors {
+    .text-#{$name}-active:active {
+      color: $color;
+    }
+    .bg-#{$name}-active:active {
+      background-color: $color;
+    }
+    .border-#{$name}-active:active {
+      border-color: $color;
+    }
+}
+
+// make color utility classes text-colorName-focus background bg-colorName-focus
+@each $name, $color in $colors {
+    .text-#{$name}-focus:focus {
+      color: $color;
+    }
+    .bg-#{$name}-focus:focus {
+      background-color: $color;
+    }
+    .border-#{$name}-focus:focus {
+      border-color: $color;
+    }
+}
+
+// make color utility classes text-colorName-disabled background bg-colorName-disabled
+@each $name, $color in $colors {
+    .text-#{$name}-disabled:disabled {
+      color: $color;
+    }
+    .bg-#{$name}-disabled:disabled {
+      background-color: $color;
+    }
+    .border-#{$name}-disabled:disabled {
+      border-color: $color;
+    }
+}
+
+// make color utility classes text-colorName-active background bg-colorName-active
+@each $name, $color in $colors {
+    .text-#{$name}-active:active {
+      color: $color;
+    }
+    .bg-#{$name}-active:active {
+      background-color: $color;
+    }
+    .border-#{$name}-active:active {
+      border-color: $color;
+    }
+}
+
+
+

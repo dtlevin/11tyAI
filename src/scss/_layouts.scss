@@ -1,0 +1,73 @@
+.container {
+  width: 90vw;
+  margin: 0 1rem;
+  @include breakpoint (small) {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+   @include breakpoint(md) {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+   @include breakpoint(lg)  {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    @include breakpoint(xl)  {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+// GRIDS
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+   @include breakpoint(md) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+.grid-1-2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+   @include breakpoint(md) {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 2rem;
+    }
+}
+
+// FLEX
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+   @include breakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-space-between {
+    align-items: space-between;
+}

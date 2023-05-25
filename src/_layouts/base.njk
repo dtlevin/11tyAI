@@ -1,0 +1,8 @@
+{% include 'head.njk' %}
+{% include 'header.njk' %}
+    {# using block allows for a modifield content block in other layouts see projects for example #}
+    {% block content %} 
+        {{ content | safe }}
+    {% endblock %}
+
+{% include 'footer.njk' %}

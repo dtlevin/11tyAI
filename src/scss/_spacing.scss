@@ -1,0 +1,248 @@
+// create  loop that makes and array  of number 4-64 by 4s. "4": "4px" is the key : value pair
+    $spacing_increments: ();
+    @for $i from 1 through 16 { // change 16 to whatever number times the increment = the number you want end with. 16 is 64px if you are going by 4 increments. 
+        // multiply $i by 4
+        $i: $i * 4; // remove if you want all the numbers 
+        $spacing_increments: map-merge($spacing_increments, ($i: $i + px));
+    }
+
+    @each $key, $value in $spacing_increments {
+        .m-#{$key} {
+            margin: $value;
+        }
+        .mt-#{$key} {
+            margin-top: $value;
+        }
+        .mb-#{$key} {
+            margin-bottom: $value;
+        }
+        .ml-#{$key} {
+            margin-left: $value;
+        }
+        .mr-#{$key} {
+            margin-right: $value;
+        }
+        .mx-#{$key} {
+            margin-left: $value;
+            margin-right: $value;
+        }
+        .my-#{$key} {
+            margin-top: $value;
+            margin-bottom: $value;
+        }
+        .p-#{$key} {
+            padding: $value;
+        }
+        .pt-#{$key} {
+            padding-top: $value;
+        }
+        .pb-#{$key} {
+            padding-bottom: $value;
+        }
+        .pl-#{$key} {
+            padding-left: $value;
+        }
+        .pr-#{$key} {
+            padding-right: $value;
+        }
+        .px-#{$key} {
+            padding-left: $value;
+            padding-right: $value;
+        }
+        .py-#{$key} {
+            padding-top: $value;
+            padding-bottom: $value;
+        }
+        @include breakpoint(md) {
+            .md-m-#{$key} {
+                margin: $value;
+            }
+            .md-mt-#{$key} {
+                margin-top: $value;
+            }
+            .md-mb-#{$key} {
+                margin-bottom: $value;
+            }
+            .md-ml-#{$key} {
+                margin-left: $value;
+            }
+            .md-mr-#{$key} {
+                margin-right: $value;
+            }
+            .md-mx-#{$key} {
+                margin-left: $value;
+                margin-right: $value;
+            }
+            .md-my-#{$key} {
+                margin-top: $value;
+                margin-bottom: $value;
+            }
+            .md-p-#{$key} {
+                padding: $value;
+            }
+            .md-pt-#{$key} {
+                padding-top: $value;
+            }
+            .md-pb-#{$key} {
+                padding-bottom: $value;
+            }
+            .md-pl-#{$key} {
+                padding-left: $value;
+            }
+            .md-pr-#{$key} {
+                padding-right: $value;
+            }
+            .md-px-#{$key} {
+                padding-left: $value;
+                padding-right: $value;
+            }
+            .md-py-#{$key} {
+                padding-top: $value;
+                padding-bottom: $value;
+            }
+        }
+        @include breakpoint(lg) {
+            .lg-m-#{$key} {
+                margin: $value;
+            }
+            .lg-mt-#{$key} {
+                margin-top: $value;
+            }
+            .lg-mb-#{$key} {
+                margin-bottom: $value;
+            }
+            .lg-ml-#{$key} {
+                margin-left: $value;
+            }
+            .lg-mr-#{$key} {
+                margin-right: $value;
+            }
+            .lg-mx-#{$key} {
+                margin-left: $value;
+                margin-right: $value;
+            }
+            .lg-my-#{$key} {
+                margin-top: $value;
+                margin-bottom: $value;
+            }
+            .lg-p-#{$key} {
+                padding: $value;
+            }
+            .lg-pt-#{$key} {
+                padding-top: $value;
+            }
+            .lg-pb-#{$key} {
+                padding-bottom: $value;
+            }
+            .lg-pl-#{$key} {
+                padding-left: $value;
+            }
+            .lg-pr-#{$key} {
+                padding-right: $value;
+            }
+            .lg-px-#{$key} {
+                padding-left: $value;
+                padding-right: $value;
+            }
+            .lg-py-#{$key} {
+                padding-top: $value;
+                padding-bottom: $value;
+            }
+        }
+        @include breakpoint(xl) {
+            .xl-m-#{$key} {
+                margin: $value;
+            }
+            .xl-mt-#{$key} {
+                margin-top: $value;
+            }
+            .xl-mb-#{$key} {
+                margin-bottom: $value;
+            }
+            .xl-ml-#{$key} {
+                margin-left: $value;
+            }
+            .xl-mr-#{$key} {
+                margin-right: $value;
+            }
+            .xl-mx-#{$key} {
+                margin-left: $value;
+                margin-right: $value;
+            }
+            .xl-my-#{$key} {
+                margin-top: $value;
+                margin-bottom: $value;
+            }
+            .xl-p-#{$key} {
+                padding: $value;
+            }
+            .xl-pt-#{$key} {
+                padding-top: $value;
+            }
+            .xl-pb-#{$key} {
+                padding-bottom: $value;
+            }
+            .xl-pl-#{$key} {
+                padding-left: $value;
+            }
+            .xl-pr-#{$key} {
+                padding-right: $value;
+            }
+            .xl-px-#{$key} {
+                padding-left: $value;
+                padding-right: $value;
+            }
+            .xl-py-#{$key} {
+                padding-top: $value;
+                padding-bottom: $value;
+            }
+    }
+    @include breakpoint(xxl) {
+        .xxl-m-#{$key} {
+            margin: $value;
+        }
+        .xxl-mt-#{$key} {
+            margin-top: $value;
+        }
+        .xxl-mb-#{$key} {
+            margin-bottom: $value;
+        }
+        .xxl-ml-#{$key} {
+            margin-left: $value;
+        }
+        .xxl-mr-#{$key} {
+            margin-right: $value;
+        }
+        .xxl-mx-#{$key} {
+            margin-left: $value;
+            margin-right: $value;
+        }
+        .xxl-my-#{$key} {
+            margin-top: $value;
+            margin-bottom: $value;
+        }
+        .xxl-p-#{$key} {
+            padding: $value;
+        }
+        .xxl-pt-#{$key} {
+            padding-top: $value;
+        }
+        .xxl-pb-#{$key} {
+            padding-bottom: $value;
+        }
+        .xxl-pl-#{$key} {
+            padding-left: $value;
+        }
+        .xxl-pr-#{$key} {
+            padding-right: $value;
+        }
+        .xxl-px-#{$key} {
+            padding-left: $value;
+            padding-right: $value;
+        }
+        .xxl-py-#{$key} {
+            padding-top: $value;
+            padding-bottom: $value;
+        }
+    }
+}

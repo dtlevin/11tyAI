@@ -1,0 +1,16 @@
+<div id="menu-wrapper">
+    <div class="nav-links">
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+                        listElement: "ul",
+                        listItemElement: "li",
+                        listClass: "p-4",
+                        listItemClass: "underline",
+                        listItemHasChildrenClass: "has-child",
+                        activeListItemClass: "",
+                        activeAnchorClass: "",
+                        activeKey: eleventyNavigation.key,
+                        showExcerpt: false
+                })| safe }}
+
+    </div>
+</div>

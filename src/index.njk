@@ -1,0 +1,39 @@
+---
+title: Dan Levin
+description: [web developemnt]
+layout: base
+---
+
+<div class="container">
+    <h1>Welcome to {{ meta.siteName }}</h1>
+    <p>{{ meta.siteDescription}}</p>
+    <p>
+        After using a lot of the great 11ty starter projects I decided to finally roll my own. I only included what I wanted and nothing more. 
+    </p>
+    <p>
+        Some of the features include:
+        <ul>
+            <li>11ty</li>
+            <li>PostCSS</li>
+            <li>ES6</li>
+            <li>BrowserSync</li>
+            <li>HTML Minification</li>
+            <li>Image Compression</li>
+            <li>SVG Insertion - &lcub;&lcub; '/src/img/yourSVG.svg' | svgContents | safe &rcub;&rcub;</li>
+            <li>SCSS</li>
+            <li>Navigation</li>
+            <li>Pagination</li> 
+        </ul>
+    </p>
+    <p>
+        There are some loops set up already in the SCSS files to generate helper classes I find useful, these include breakpoints, margins, padding, and font-size.  Helper class examples are loosly based on Bootstrap.
+        
+        <ul>
+            <li>p-24 will add 24px padding the same for all sides, same and for margins m-24</li>
+            <li>md-py-24 will add 24px padding to the top and botom only for medium screen sizes and up.</li>
+            <li>text-colorName will make a text that color, the same with bg-colorName</li>
+            <li>text-hover-colorName will hover to that color</li>
+        </ul>
+        Comments are in the scss files to show all of the options and explains how each works
+    </p>
+</div>

@@ -1,0 +1,28 @@
+$sizes: (
+  "small": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px
+);
+
+@mixin breakpoint($size) {
+    @if map-has-key($sizes, $size) {
+        $size-value: map-get($sizes, $size);
+        @media (min-width: $size-value) {
+        @content;
+        }
+    } @else {
+        @error "Invalid breakpoint size: #{$size}.";
+    }
+}
+  
+@each $size, $value in $sizes {
+    @include breakpoint($size) {
+      // styles for this breakpoint size
+    }
+}
+  
+
+
+
