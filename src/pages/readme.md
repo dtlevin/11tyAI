@@ -1,4 +1,4 @@
-# 11tyAI
+# 11tyAI (v0.1)
 > Created by Dan Levin 
 
 A simple starter project for Eleventy with Webpack static site generator [Eleventy/11ty](https://www.11ty.dev/), just
@@ -13,11 +13,11 @@ Plugins used (you don't have to keep them):
 - [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
 - [eleventy-plugin-svg-contents](https://github.com/brob/eleventy-plugin-svg-contents)
 - [eleventy-navigation](https://www.11ty.dev/docs/plugins/navigation/)
+
 ## Live demo
+- https://11tyai.danlevin.xyz/
 
-- https://mandrasch.github.io/11ty-plain-bootstrap5/
-
-[![Open in Gitpod](gitpod.svg)](https://gitpod.io/#https://github.com/mandrasch/11ty-plain-bootstrap5)
+[![Open in Github](gitpod.svg)]( https://github.com/dtlevin/11tyAI)
 
 ## Usage
 
@@ -27,7 +27,7 @@ Plugins used (you don't have to keep them):
 
 **Start local development with**
 
-- `npm run dev`
+- `npm run start`
 
 Preview runs on http://localhost:8080/.
 

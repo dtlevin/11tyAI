@@ -27,7 +27,7 @@ Plugins used (you don't have to keep them):
 
 **Start local development with**
 
-- `npm run dev`
+- `npm run start`
 
 Preview runs on http://localhost:8080/.
 
