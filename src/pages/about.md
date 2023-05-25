@@ -1,3 +1,11 @@
+---
+title: About
+layout: base
+description:  About Page
+eleventyNavigation:
+  key: About
+---
+
 # 11tyAI (v0.1)
 > Created by Dan Levin 
 
@@ -17,7 +25,7 @@ Plugins used (you don't have to keep them):
 ## Live demo
 - https://11tyai.danlevin.xyz/
 
-[![Open in Github](gitpod.svg)]( https://github.com/dtlevin/11tyAI)
+- [[Open in Github]]( https://github.com/dtlevin/11tyAI)
 
 ## Usage
 
